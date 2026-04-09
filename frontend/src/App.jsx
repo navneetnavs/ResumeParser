@@ -7,7 +7,6 @@ function App() {
   const analyzeResume = async () => {
     setLoading(true);
     try {
-      // Fetching from your deployed Render backend
       const response = await fetch('https://resumeparser-production-5539.up.railway.app/match');
       const result = await response.json();
       setData(result);
@@ -68,7 +67,6 @@ function App() {
                 </div>
               </div>
 
-              {/* Skills Analysis [cite: 35-38, 58-61] */}
               <div className="space-y-6">
                 <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Job Skill Mapping</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
